@@ -184,6 +184,9 @@ h2 {
 }
 table {
   border-spacing: 0px;
+  display: block;
+  overflow-x: auto;
+  white-space: nowrap;
 }
 
 thead tr {
