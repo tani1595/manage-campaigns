@@ -9,9 +9,8 @@ const customStyles = {
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    maxWidth: "500px",
+    maxWidth: "300rem",
   },
-
 };
 
 // Binding modal to appElement
@@ -28,7 +27,7 @@ function ModalClass(props) {
   }
 
   return (
-    <div id="modalElement" >
+    <div id="modalElement">
       <img className="img-small" src={props.imgIcon} alt="logo" />
 
       <button className="button-noStyle" onClick={openModal}>
@@ -38,6 +37,7 @@ function ModalClass(props) {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
+        className="modal"
       >
         <form>
           <div className="div1">
