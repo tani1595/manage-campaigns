@@ -97,11 +97,15 @@ h2 {
   background-color: #f1f1f4;
   color: #181b34;
   border: 2px solid #181b34;
-  margin: 2rem 11rem;
+  margin: 2rem 0 0 0;
 }
 
 .div1 h2 {
   color: #2b416c;
+}
+
+.div1Button{
+  text-align: center;
 }
 
 .button-noStyle {
@@ -119,18 +123,33 @@ h2 {
 
 @media only screen and (max-width: 598px) {
   .ml-7 {
-    margin-left: 1.5rem;
-    margin-right: 1.5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 
   .main-header ul li {
-    padding: 1.25rem 7px;
+    padding: 1em 7px;
   }
   .modal {
-    max-width: 300px;
+    bottom:auto !important;
   }
-  table {
+  .outerTable table {
     text-align: center;
+  }
+
+  .div1 thead tr {
+    height: 1.5rem;
+    color: #7788a3;
+  }
+  .div1 tbody tr {
+    /*  border-bottom: 1px solid #ECECEC; */
+    height: 2.3rem;
+    color: #2b416c;
+  }
+  .div1 th,
+  .div1 td {
+    width: 1%;
+    padding: 0.5rem;
   }
 }
 

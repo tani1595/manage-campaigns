@@ -3,13 +3,16 @@ import Modal from "react-modal";
 
 const customStyles = {
   content: {
-    top: "50%",
+    /* top: "50%",
     left: "50%",
     right: "auto",
     bottom: "auto",
     marginRight: "-50%",
     transform: "translate(-50%, -50%)",
-    maxWidth: "300rem",
+     */
+    margin:"auto",
+    maxWidth: "30rem",
+    bottom:"auto"
   },
 };
 
@@ -37,7 +40,7 @@ function ModalClass(props) {
         isOpen={modalIsOpen}
         onRequestClose={closeModal}
         style={customStyles}
-        className="modal"
+        /* className="modal"  */
       >
         <form>
           <div className="div1">
@@ -66,9 +69,12 @@ function ModalClass(props) {
                 </tr>
               </tbody>
             </table>
+            <div className="div1Button">
             <button className="button-main" onClick={closeModal}>
+            
               Close
             </button>
+            </div>
           </div>
         </form>
       </Modal>
